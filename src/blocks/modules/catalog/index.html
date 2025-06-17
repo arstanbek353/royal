@@ -1,0 +1,31 @@
+<section class="catalog" data-theme="light">
+  <div class="catalog__wrapper">
+    <div class="container">
+      <div class="catalog__inner">
+        <div class="catalog__header">
+          <h2 class="catalog__title">Объекты</h2>
+          <div class="catalog__cap">Фильтруйте. Сравнивайте. <span>Выбирайте.</span></div>
+          <div class="catalog__filter">
+            @@include("../filter/index.html")
+          </div>
+        </div>
+        <div class="catalog__body">
+          <div class="catalog__list">
+            @@include("../card/index.html")
+            @@include("../card/index2.html")
+            @@include("../card/index3.html")
+            @@include("../card/index4.html")
+          </div>
+        </div>
+        <div class="catalog__footer">
+            <a href="#" class="circle-btn">
+              <div class="pulse-ring"><span></span><span></span><span></span><span></span></div>
+              <span class="circle-btn__str">
+                Смотреть все
+              </span>
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

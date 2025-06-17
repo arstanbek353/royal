@@ -1,0 +1,15 @@
+@mixin com {
+	@media (max-width: 72em) {
+		@content;
+	}
+}
+@mixin tab {
+	@media (max-width: 64em) {
+		@content;
+	}
+}
+@mixin mob {
+	@media (max-width: 48em) {
+		@content;
+	}
+}

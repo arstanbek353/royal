@@ -1,0 +1,90 @@
+.catalog {
+  padding-top: 110px;
+  padding-bottom: 32px;
+  &[data-theme="dark"] {
+    --bg-color: #222222;
+    --text-color: #ffffff;
+  }
+
+  &[data-theme="light"] {
+    --bg-color: #FAF9F6;
+    --text-color: #222222;
+  }
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  &__title {
+    text-align: right;
+    font-family: 'Florentia';
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 15px;
+    padding-right: 44px;
+  }
+  &__cap {
+    font-family: "Florentia";
+    font-size: 60px;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 30px;
+    span {
+      color: #01665E;
+    }
+  }
+  &__header {
+    margin-bottom: 57px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 70px 0;
+  }
+  &__footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  @include com {
+    padding-top: 90px;
+    &__title {
+      padding-right: 30px;
+    }
+    &__cap {
+      font-size: 52px;
+      margin-bottom: 25px;
+    }
+    &__footer {
+      margin-top: 40px;
+    }
+  }
+  @include tab {
+    padding-top: 50px;
+    &__title {
+      padding-right: 0;
+    }
+    &__list {
+      gap: 0;
+    }
+    &__cap {
+      font-size: 45px;
+      margin-bottom: 20px;
+    }
+    &__footer {
+      margin-top: 40px;
+    }
+  }
+  @include mob {
+    padding-top: 50px;
+    &__title {
+      padding-right: 0;
+      font-size: 12px;
+    }
+    &__cap {
+      font-size: 22px;
+      margin-bottom: 17px;
+    }
+    &__footer {
+      margin-top: 40px;
+    }
+  }
+}
