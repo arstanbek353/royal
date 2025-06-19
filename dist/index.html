@@ -143,11 +143,11 @@
     <div class="filter__switch">
       <div class="switch">
         <label class="switch__label">
-          <input type="radio" name="type-1" id="" hidden checked>
+          <input type="radio" name="type-1" id="Все" value="Все" hidden checked>
           <span>30 объектов</span>
         </label>
         <label class="switch__label">
-          <input type="radio" name="type-1" id="" hidden>
+          <input type="radio" name="type-1" id="Жилой дом" value="Жилой дом" hidden>
           <span>8 Жилых домой</span>
         </label>
       </div>
@@ -155,19 +155,19 @@
     <div class="filter__radios filter__radios--top">
       <div class="radios">
         <label class="radios__label">
-          <input type="radio" name="type-2" id="" hidden>
+          <input type="radio" name="type-2" id="Все" value="Все" hidden>
           <span>Все</span>
         </label>
         <label class="radios__label">
-          <input type="radio" name="type-2" id="" hidden>
+          <input type="radio" name="type-2" id="Строящиеся" value="Строящиеся" hidden>
           <span>Строящиеся</span>
         </label>
         <label class="radios__label">
-          <input type="radio" name="type-2" id="" hidden>
+          <input type="radio" name="type-2" id="Завершенные" value="Завершенные" hidden>
           <span>Завершенные</span>
         </label>
         <label class="radios__label">
-          <input type="radio" name="type-2" id="" hidden>
+          <input type="radio" name="type-2" id="На стадии завершения" id="На стадии завершения" hidden>
           <span>На стадии завершения</span>
         </label>
       </div>
@@ -177,29 +177,31 @@
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M19 8.5L12 15.5L5 8.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-        <select name="select" id="subject">
-          <option selected disabled value="">Choose</option>
-          <option value="option 1">option 1</option>
-          <option value="option 2">option 2</option>
-          <option value="option 3">option 3</option>
+        <select name="select" id="locations">
+          <option selected disabled value="">Выберите локацию</option>
+          <option value="Все">Все</option>
+          <option value="Локация 1">Локация 1</option>
+          <option value="Локация 2">Локация 2</option>
+          <option value="Локация 3">Локация 3</option>
+          <option value="Локация 4">Локация 4</option>
         </select>
       </div>
       <div class="filter__radios filter__radios--bot">
         <div class="radios">
           <label class="radios__label">
-            <input type="radio" name="type-3" id="" hidden>
+            <input type="radio" name="type-3" id="Квартиры" hidden>
             <span>Квартиры</span>
           </label>
           <label class="radios__label">
-            <input type="radio" name="type-3" id="" hidden>
+            <input type="radio" name="type-3" id="Офисы" value="Офисы" hidden>
             <span>Офисы</span>
           </label>
           <label class="radios__label">
-            <input type="radio" name="type-3" id="" hidden>
+            <input type="radio" name="type-3" id="Коттеджи" value="Коттеджи" hidden>
             <span>Коттеджи</span>
           </label>
           <label class="radios__label">
-            <input type="radio" name="type-3" id="" hidden>
+            <input type="radio" name="type-3" id="Коммерческие помещения" value="Коммерческие помещения" hidden>
             <span>Коммерческие помещения</span>
           </label>
         </div>
@@ -211,7 +213,8 @@
         </div>
         <div class="catalog__body">
           <div class="catalog__list">
-            <article class="card" id="yntymak">
+            <article class="card" id="yntymak" 
+>
   <h4 class="card__cap"><a href="#">Ынтымак</a></h4>
   <div class="card__header">
     <span class="status status--progress">Строится</span>
@@ -251,7 +254,8 @@
     </div>
   </div>
 </article>
-            <article class="card" id="Tower">
+            <article class="card" id="Tower"
+>
   <h4 class="card__cap"><a href="#">Tower</a></h4>
   <div class="card__header">
     <span class="status status--finished">Завершен</span>
@@ -291,7 +295,8 @@
     </div>
   </div>
 </article>
-            <article class="card" id="Royal Resort">
+            <article class="card" id="Royal Resort"
+>
   <h4 class="card__cap"><a href="#">Royal Resort</a></h4>
   <div class="card__header">
     <span class="status status--progress">Строится</span>
@@ -331,7 +336,8 @@
     </div>
   </div>
 </article>
-            <article class="card" id="Cambridge">
+            <article class="card" id="Cambridge"
+>
   <h4 class="card__cap"><a href="#">Cambridge</a></h4>
   <div class="card__header">
     <span class="status status--finished">Завершен</span>
